@@ -1,28 +1,47 @@
 {
   "id": "spell-thief",
   "title": "Spell Thief",
+  "description": "<h1>Spell Thief</h1><p><em><strong>A weaver of stolen magic, a parasite in the arcane ecosystem.</strong></em></p><p>Spell Thieves do not only study magic — they steal it. They siphon spells mid-cast, hijack curses meant for allies, and redirect devastating effects back at their enemies. Reactive, tactical, and dangerous to spellcasters, a Spell Thief turns arcane power into a liability.</p>",
   "version": "1.0.0",
-  "compatibility": {
-    "minimum": "13",
-    "verified": "13"
-  },
-  "description": "<h1>Spell thief</h1><p><em><strong>A weaver of stolen magic, a parasite in the arcane ecosystem.</strong></em></p><p>Spell Thieves do not only study magic — they **steal it**. They siphon spells mid-cast, hijack curses meant for allies, and redirect devastating effects back at their enemies. Reactive, tactical, and dangerous to spellcasters, a Spell Thief turns arcane power into a liability.</p><p></p>",
   "authors": [
     {
       "name": "Nisp",
       "email": "nispeter2@gmail.com",
       "discord": "Nisp",
-      "flags": {}
+      "flags": {
+        "github": "Nispeter"
+      }
     }
   ],
-  "flags": {
-    "canUpload": true
+  "url": "https://github.com/Nispeter/Foundry-spell-thief",
+  "manifest": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/module.json",
+  "download": "https://github.com/Nispeter/Foundry-spell-thief/releases/latest/download/spell-thief.zip",
+  "changelog": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/CHANGELOG.md",
+  "readme": "README.md",
+  "bugs": "https://github.com/Nispeter/Foundry-spell-thief/issues",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13.999"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.2.5"
+        }
+      }
+    ]
   },
   "packs": [
     {
       "name": "west-march",
       "label": "West-March",
       "path": "packs/west-march",
+      "module": "spell-thief",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -30,5 +49,8 @@
         "ASSISTANT": "OWNER"
       }
     }
-  ]
+  ],
+  "flags": {
+    "canUpload": true
+  }
 }
