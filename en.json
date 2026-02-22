@@ -1,0 +1,49 @@
+{
+  "SPELLTHIEF.Title": "Spell Thief",
+  "SPELLTHIEF.Description": "A weaver of stolen magic, a parasite in the arcane ecosystem.",
+
+  "SPELLTHIEF.Feature.ArcanePickpocket": "Arcane Pickpocket",
+  "SPELLTHIEF.Feature.CunningAction": "Cunning Action",
+  "SPELLTHIEF.Feature.RedirectMagic": "Redirect Magic",
+  "SPELLTHIEF.Feature.FightingStyle": "Fighting Style",
+  "SPELLTHIEF.Feature.Spellcasting": "Spellcasting",
+  "SPELLTHIEF.Feature.LarcenousDiscipline": "Larcenous Discipline",
+  "SPELLTHIEF.Feature.AbilityScoreImprovement": "Ability Score Improvement",
+  "SPELLTHIEF.Feature.ExtraAttack": "Extra Attack",
+  "SPELLTHIEF.Feature.SpellInterception": "Spell Interception",
+  "SPELLTHIEF.Feature.FocusSpecialization": "Focus Specialization",
+  "SPELLTHIEF.Feature.ImprovedArcaneLarceny": "Improved Arcane Larceny",
+  "SPELLTHIEF.Feature.GrandTheftMagic": "Grand Theft Magic",
+  "SPELLTHIEF.Feature.MasterLarcenist": "Master Larcenist",
+  "SPELLTHIEF.Feature.Elusive": "Elusive",
+  "SPELLTHIEF.Feature.EpicBoon": "Epic Boon",
+  "SPELLTHIEF.Feature.ArcaneHeist": "Arcane Heist",
+
+  "SPELLTHIEF.Discipline.ArcaneReaver": "Arcane Reaver",
+  "SPELLTHIEF.Discipline.HexBroker": "Hex Broker",
+  "SPELLTHIEF.Discipline.MirrorSavant": "Mirror Savant",
+
+  "SPELLTHIEF.Discipline.ArcaneReaver.SpellbladeStrike": "Spellblade Strike",
+  "SPELLTHIEF.Discipline.ArcaneReaver.ArcaneReflex": "Arcane Reflex",
+  "SPELLTHIEF.Discipline.ArcaneReaver.AntimagicStrikes": "Antimagic Strikes",
+  "SPELLTHIEF.Discipline.ArcaneReaver.CombatTheft": "Combat Theft",
+  "SPELLTHIEF.Discipline.ArcaneReaver.CounterspellingFlurry": "Counterspelling Flurry",
+
+  "SPELLTHIEF.Discipline.HexBroker.CurseCollector": "Curse Collector",
+  "SPELLTHIEF.Discipline.HexBroker.HexWeaving": "Hex Weaving",
+  "SPELLTHIEF.Discipline.HexBroker.InvertFortune": "Invert Fortune",
+  "SPELLTHIEF.Discipline.HexBroker.ConditionStacking": "Condition Stacking",
+  "SPELLTHIEF.Discipline.HexBroker.PlagueBroker": "Plague Broker",
+
+  "SPELLTHIEF.Discipline.MirrorSavant.ReflectiveTheft": "Reflective Theft",
+  "SPELLTHIEF.Discipline.MirrorSavant.IllusoryDecoy": "Illusory Decoy",
+  "SPELLTHIEF.Discipline.MirrorSavant.SpellEcho": "Spell Echo",
+  "SPELLTHIEF.Discipline.MirrorSavant.SwapFate": "Swap Fate",
+  "SPELLTHIEF.Discipline.MirrorSavant.MirrorCascade": "Mirror Cascade",
+
+  "SPELLTHIEF.LarcenyDice": "Larceny Dice",
+  "SPELLTHIEF.LarcenyDice.Hint": "Current number of available Larceny Dice.",
+
+  "SPELLTHIEF.Spellcasting.Ability": "Intelligence",
+  "SPELLTHIEF.Spellcasting.Type": "Half-caster"
+}
