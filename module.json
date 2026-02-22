@@ -15,7 +15,7 @@
   ],
   "url": "https://github.com/Nispeter/Foundry-spell-thief",
   "manifest": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/module.json",
-  "download": "https://github.com/Nispeter/Foundry-spell-thief/releases/latest/download/spell-thief.zip",
+  "download": "https://github.com/Nispeter/Foundry-spell-thief/archive/refs/tags/1.0.0.zip",
   "changelog": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/CHANGELOG.md",
   "readme": "README.md",
   "bugs": "https://github.com/Nispeter/Foundry-spell-thief/issues",
