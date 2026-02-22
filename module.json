@@ -1,0 +1,34 @@
+{
+  "id": "spell-thief",
+  "title": "Spell Thief",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "<h1>Spell thief</h1><p><em><strong>A weaver of stolen magic, a parasite in the arcane ecosystem.</strong></em></p><p>Spell Thieves do not only study magic — they **steal it**. They siphon spells mid-cast, hijack curses meant for allies, and redirect devastating effects back at their enemies. Reactive, tactical, and dangerous to spellcasters, a Spell Thief turns arcane power into a liability.</p><p></p>",
+  "authors": [
+    {
+      "name": "Nisp",
+      "email": "nispeter2@gmail.com",
+      "discord": "Nisp",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "packs": [
+    {
+      "name": "west-march",
+      "label": "West-March",
+      "path": "packs/west-march",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ]
+}
