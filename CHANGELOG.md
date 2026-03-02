@@ -4,7 +4,12 @@ All notable changes to this module will be documented in this file.
 
 ---
 
-## [1.4.0] — Current
+## [1.4.1] — Current
+
+- Changed image directory to module
+- Added images to assetse
+
+## [1.4.0] 
 
 ### Core Class
 - **Equipment:** Changed armour options to studded leather armour or chain shirt
