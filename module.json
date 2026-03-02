@@ -2,7 +2,7 @@
   "id": "spell-thief",
   "title": "Spell Thief",
   "description": "<h1>Spell Thief</h1><p><em><strong>A weaver of stolen magic, a parasite in the arcane ecosystem.</strong></em></p><p>Spell Thieves do not only study magic — they steal it. They siphon spells mid-cast, hijack curses meant for allies, and redirect devastating effects back at their enemies. Reactive, tactical, and dangerous to spellcasters, a Spell Thief turns arcane power into a liability.</p>",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "authors": [
     {
       "name": "Nisp",
@@ -15,7 +15,7 @@
   ],
   "url": "https://github.com/Nispeter/Foundry-spell-thief",
   "manifest": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/module.json",
-  "download": "https://github.com/Nispeter/Foundry-spell-thief/archive/refs/tags/1.0.0.zip",
+  "download": "https://github.com/Nispeter/Foundry-spell-thief/archive/refs/tags/1.4.1.zip",
   "changelog": "https://raw.githubusercontent.com/Nispeter/Foundry-spell-thief/main/CHANGELOG.md",
   "readme": "README.md",
   "bugs": "https://github.com/Nispeter/Foundry-spell-thief/issues",
