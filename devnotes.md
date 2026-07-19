@@ -1,0 +1,12 @@
+- el hex broker debneria recibir el en curse collector, ahora solo sale la seleccion de status transposition 
+- el  hex broker deberia recibir la opcion que no tomo en focus specializaiton 
+- al tirar arcane pickpocket la imagen sale gigante en el popup para tirar el dado
+- las habilidades que usan larceny die deberian salir la opcion de utilizar recurso (ejepmlo anti magic strikes que tambien deberia tener dado para aumentar el daño)
+- grand theft magic tiene cargas
+- master larcenist porque tiene cargas? o:
+- Arcane heist tiene cargas
+- plague broker deberia poder poner un area 
+- revisa bien todas las cosas con cargas
+- revisa bien todas las cosas que gastan larceny die 
+- Focus specialization deberia darte Detect magic preparado y free
+- Que funcione para foundry v14
