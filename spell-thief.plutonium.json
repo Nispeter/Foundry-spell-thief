@@ -12,8 +12,8 @@
 				"color": "8b0000"
 			}
 		],
-		"dateAdded": 1784430537,
-		"dateModified": 1784430537
+		"dateAdded": 1784434735,
+		"dateModified": 1784434735
 	},
 	"class": [
 		{
@@ -21,6 +21,7 @@
 			"source": "SpTh",
 			"page": 1,
 			"edition": "one",
+			"foundryImg": "modules/spell-thief/assets/magic-swirl.svg",
 			"primaryAbility": [
 				{
 					"dex": true,
@@ -125,12 +126,51 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) a {@item rapier|xphb} or (b) a {@item shortsword|xphb}",
-					"(a) a {@item hand crossbow|xphb} and 20 {@item crossbow bolts (20)|xphb|bolts} or (b) any {@filter simple weapon|items|type=simple weapon}",
+					"(a) a {@item hand crossbow|xphb} and 20 {@item bolts (20)|xphb|bolts} or (b) any simple weapon",
 					"(a) {@item studded leather armor|xphb} or (b) a {@item chain shirt|xphb}",
 					"{@item Thieves' Tools|XPHB}",
-					"an arcane focus (dagger, ring, glove, tattoo, or similar object)"
+					"an arcane focus (a {@item dagger|xphb}, ring, glove, tattoo, or similar object)"
 				],
-				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}"
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"rapier|xphb"
+						],
+						"b": [
+							"shortsword|xphb"
+						]
+					},
+					{
+						"a": [
+							"hand crossbow|xphb",
+							"bolts (20)|xphb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"studded leather armor|xphb"
+						],
+						"b": [
+							"chain shirt|xphb"
+						]
+					},
+					{
+						"_": [
+							"thieves' tools|xphb"
+						]
+					},
+					{
+						"_": [
+							"dagger|xphb"
+						]
+					}
+				]
 			},
 			"multiclassing": {
 				"requirements": {
@@ -499,6 +539,7 @@
 			"className": "Spell Thief",
 			"classSource": "SpTh",
 			"page": 1,
+			"foundryImg": "modules/spell-thief/assets/magic-trident.svg",
 			"subclassFeatures": [
 				"Spellblade Strike|Spell Thief|SpTh|Arcane Reaver|SpTh|3",
 				"Arcane Reflex|Spell Thief|SpTh|Arcane Reaver|SpTh|3",
@@ -536,6 +577,7 @@
 			"className": "Spell Thief",
 			"classSource": "SpTh",
 			"page": 1,
+			"foundryImg": "modules/spell-thief/assets/intricate-necklace.svg",
 			"subclassFeatures": [
 				"Curse Collector|Spell Thief|SpTh|Hex Broker|SpTh|3",
 				"Hex Weaving|Spell Thief|SpTh|Hex Broker|SpTh|3",
@@ -560,6 +602,7 @@
 			"className": "Spell Thief",
 			"classSource": "SpTh",
 			"page": 1,
+			"foundryImg": "modules/spell-thief/assets/time-trap.svg",
 			"subclassFeatures": [
 				"Reflective Theft|Spell Thief|SpTh|Mirror Savant|SpTh|3",
 				"Illusory Decoy|Spell Thief|SpTh|Mirror Savant|SpTh|3",
@@ -611,7 +654,8 @@
 						"{@b Critical Mishap (natural 1):} the GM chooses one — the spell is cast on you in addition to the original target; the spell's effects are duplicated if already targeting you; or you take {@damage 1d6} psychic damage per spell level as magical feedback."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/magic-palm.svg"
 		},
 		{
 			"name": "Cunning Action",
@@ -622,7 +666,8 @@
 			"level": 1,
 			"entries": [
 				"Your training in exploiting magical vulnerabilities has honed your physical agility. You can take a {@variantrule Bonus Action|XPHB} on each of your turns in combat to take the {@action Dash}, {@action Disengage}, or {@action Hide} action."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/cowled.svg"
 		},
 		{
 			"name": "Spellcasting",
@@ -662,7 +707,8 @@
 						"{@b Wizard Spells.} You can learn any spell from the wizard spell list found in a scroll or another wizard's spellbook. This takes four times as long (32 hours per spell level, minimum 32 hours) and costs 200 gp per spell level."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/ice-spell-cast.svg"
 		},
 		{
 			"name": "Redirect Magic",
@@ -682,7 +728,8 @@
 						"The redirected damage is the same type as the original spell."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/shieldcomb.svg"
 		},
 		{
 			"name": "Fighting Style",
@@ -693,7 +740,8 @@
 			"level": 2,
 			"entries": [
 				"You gain a {@filter Fighting Style feat|feats|category=FS} of your choice, except {@i Blind Fighting} or {@i Great Weapon Fighting}."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/dripping-sword.svg"
 		},
 		{
 			"name": "Larcenous Discipline",
@@ -704,7 +752,8 @@
 			"level": 3,
 			"entries": [
 				"You choose a specialized path that defines how you steal and wield magic: {@b Arcane Reaver}, {@b Hex Broker}, or {@b Mirror Savant}. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/crossroad.svg"
 		},
 		{
 			"name": "Larcenous Discipline Feature",
@@ -715,7 +764,8 @@
 			"level": 6,
 			"entries": [
 				"You gain a feature granted by your Larcenous Discipline."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/crossroad.svg"
 		},
 		{
 			"name": "Larcenous Discipline Feature",
@@ -726,7 +776,8 @@
 			"level": 10,
 			"entries": [
 				"You gain a feature granted by your Larcenous Discipline."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/crossroad.svg"
 		},
 		{
 			"name": "Larcenous Discipline Feature",
@@ -737,7 +788,8 @@
 			"level": 14,
 			"entries": [
 				"You gain a feature granted by your Larcenous Discipline."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/crossroad.svg"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -748,7 +800,8 @@
 			"level": 4,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/skills.svg"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -759,7 +812,8 @@
 			"level": 8,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/skills.svg"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -770,7 +824,8 @@
 			"level": 12,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/skills.svg"
 		},
 		{
 			"name": "Ability Score Improvement",
@@ -781,7 +836,8 @@
 			"level": 16,
 			"entries": [
 				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/skills.svg"
 		},
 		{
 			"name": "Extra Attack",
@@ -792,7 +848,8 @@
 			"level": 5,
 			"entries": [
 				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/sword-clash.svg"
 		},
 		{
 			"name": "Spell Interception",
@@ -827,7 +884,8 @@
 						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/gaze.svg"
 		},
 		{
 			"name": "Focus Specialization",
@@ -870,7 +928,8 @@
 						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/juggler.svg"
 		},
 		{
 			"name": "Improved Arcane Larceny",
@@ -890,7 +949,8 @@
 						"When you fail an Arcane Pickpocket check, you roll the Larceny Die twice and take the higher result when reducing damage."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/magic-swirl.svg"
 		},
 		{
 			"name": "Grand Theft Magic",
@@ -910,7 +970,8 @@
 						"You may cast it at any time within that duration without expending a spell slot."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/icicles-fence.svg"
 		},
 		{
 			"name": "Master Larcenist",
@@ -930,7 +991,8 @@
 						"When you steal a spell, you can immediately cast it as part of the same Reaction or Bonus Action."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/magic-swirl.svg"
 		},
 		{
 			"name": "Elusive",
@@ -941,7 +1003,8 @@
 			"level": 18,
 			"entries": [
 				"You are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't {@condition incapacitated}."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/wind-hole.png"
 		},
 		{
 			"name": "Epic Boon",
@@ -952,7 +1015,8 @@
 			"level": 19,
 			"entries": [
 				"You gain an {@filter Epic Boon feat|feats|category=EB} or another feat of your choice for which you qualify."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/pick-of-destiny.svg"
 		},
 		{
 			"name": "Arcane Heist",
@@ -973,7 +1037,8 @@
 						"You can steal and maintain concentration on two spells simultaneously."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/cloak-dagger.svg"
 		}
 	],
 	"subclassFeature": [
@@ -989,7 +1054,8 @@
 			"entries": [
 				"When you successfully steal a spell, you can immediately make one melee weapon attack as part of the same Reaction. This attack deals an additional {@damage 1d6} force damage.",
 				"This bonus damage increases to {@damage 2d6} at 10th level and {@damage 3d6} at 14th level."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/wave-strike.svg"
 		},
 		{
 			"name": "Arcane Reflex",
@@ -1002,7 +1068,8 @@
 			"level": 3,
 			"entries": [
 				"You gain one additional Reaction per round that can only be used for Arcane Pickpocket or Redirect Magic. Additionally, when an attacker you can see hits you with an attack, you can use your Reaction to phase through the Weave, {@i halving} the attack's damage against you."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/dodging.svg"
 		},
 		{
 			"name": "Antimagic Strikes",
@@ -1024,7 +1091,8 @@
 					]
 				},
 				"You can cast one of your cantrips in place of one of those attacks. Starting at this level you know the {@filter Spell Thief cantrips|spells|level=0|class=Spell Thief}: {@spell green-flame blade|tce}, {@spell booming blade|tce}, {@spell sword burst|tce}, {@spell shocking grasp|xphb}, {@spell chill touch|xphb}, and {@spell lightning lure|tce}."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/scalpel-strike.svg"
 		},
 		{
 			"name": "Combat Theft",
@@ -1038,7 +1106,8 @@
 			"entries": [
 				"When you use your Extra Attack feature, you can replace one of your attacks with an Arcane Pickpocket attempt (without using your Reaction).",
 				"You can now use Spellblade Strike and Antimagic Strikes with small ranged or throwable weapons. Additionally, when a creature within 40 feet of you casts a spell, you can make an opportunity attack against them."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/icicles-aura.svg"
 		},
 		{
 			"name": "Counterspelling Flurry",
@@ -1061,7 +1130,8 @@
 						"You can re-roll the steal-spell coin flip."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/multiple-targets.svg"
 		},
 		{
 			"name": "Curse Collector",
@@ -1076,7 +1146,8 @@
 				"You gain the {@b Status Transposition} option from the Focus Specialization feature. When you reach 7th level, you do not choose a Focus Specialization.",
 				"When you steal a debuff or harmful magical condition, you gain temporary hit points equal to {@dice 1d6} + your Intelligence modifier.",
 				"Additionally, you learn the {@spell hex} spell if you don't already know it. It doesn't count against your spells known, and you can cast it once without expending a spell slot, regaining that use on a short or long rest. You can also learn stolen spells from the warlock spell list."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/cursed-star.svg"
 		},
 		{
 			"name": "Hex Weaving",
@@ -1089,7 +1160,8 @@
 			"level": 3,
 			"entries": [
 				"When you use Status Transposition to transfer a harmful condition, you can spend an additional Larceny Die to transfer it to two creatures instead of one. Both targets make saving throws as normal."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/dripping-star.svg"
 		},
 		{
 			"name": "Invert Fortune",
@@ -1111,7 +1183,8 @@
 					]
 				},
 				"The inverted effect uses your spell save DC and lasts for the same duration as the original spell would have."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/interleaved-claws.svg"
 		},
 		{
 			"name": "Condition Stacking",
@@ -1133,7 +1206,8 @@
 					]
 				},
 				"You can maintain this enhancement on a number of creatures equal to your Intelligence modifier."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/bowl-spiral.svg"
 		},
 		{
 			"name": "Plague Broker",
@@ -1149,7 +1223,8 @@
 				"All creatures in the area must make an Intelligence saving throw against your spell save DC. On a failed save, each creature shares the magical conditions currently affecting any creature you can see — allies gain beneficial conditions, enemies share harmful effects. Each affected condition lasts for 1 minute. You can target up to your Intelligence modifier friendly creatures and up to your Intelligence modifier hostile creatures.",
 				"Affected creatures can repeat the saving throw at the end of each of their turns, ending the effect on themselves on a success.",
 				"Once you use this feature, you can't use it again until you finish a Long Rest."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/lightning-dome.svg"
 		},
 		{
 			"name": "Reflective Theft",
@@ -1163,7 +1238,8 @@
 			"entries": [
 				"When you successfully steal a targeted spell (one that targets specific creatures), you can immediately redirect it to a different valid target within the spell's range.",
 				"The new target must make the original saving throw or be subjected to the original spell attack roll, using your spell save DC or spell attack modifier."
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/extraction-orb.svg"
 		},
 		{
 			"name": "Illusory Decoy",
@@ -1186,7 +1262,8 @@
 						"While the duplicate exists, you have advantage on your next {@skill Stealth} check."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/duality.svg"
 		},
 		{
 			"name": "Spell Echo",
@@ -1207,7 +1284,8 @@
 						"You can't create an echo of an echo."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/vibrating-ball.svg"
 		},
 		{
 			"name": "Swap Fate",
@@ -1229,7 +1307,8 @@
 						"The swapped ally gains the benefits of your Illusory Decoy feature, creating a duplicate in their space that lasts until the start of your next turn."
 					]
 				}
-			]
+			],
+			"foundryImg": "modules/spell-thief/assets/body-swapping.svg"
 		},
 		{
 			"name": "Mirror Cascade",
@@ -1243,6 +1322,66 @@
 			"entries": [
 				"Once per Long Rest, when you steal a spell of 5th level or lower, you can create four echoes of that spell instead of one.",
 				"Each echo can target a different creature or area within the spell's range. The echoes all resolve simultaneously, use your spell save DC and spell attack modifier, and are cast at base spell level."
+			],
+			"foundryImg": "modules/spell-thief/assets/psychic-waves.svg"
+		}
+	],
+	"foundryClass": [
+		{
+			"name": "Spell Thief",
+			"source": "SpTh",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"title": "Larceny Dice",
+					"configuration": {
+						"identifier": "larceny-dice",
+						"type": "number",
+						"scale": {
+							"1": {
+								"value": 2
+							},
+							"5": {
+								"value": 3
+							},
+							"9": {
+								"value": 4
+							},
+							"13": {
+								"value": 5
+							},
+							"17": {
+								"value": 6
+							}
+						}
+					}
+				},
+				{
+					"type": "ScaleValue",
+					"title": "Die Size",
+					"configuration": {
+						"identifier": "die-size",
+						"type": "dice",
+						"scale": {
+							"1": {
+								"number": 1,
+								"faces": 6
+							},
+							"5": {
+								"number": 1,
+								"faces": 8
+							},
+							"11": {
+								"number": 1,
+								"faces": 10
+							},
+							"17": {
+								"number": 1,
+								"faces": 12
+							}
+						}
+					}
+				}
 			]
 		}
 	]
