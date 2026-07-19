@@ -1,0 +1,1249 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SpTh",
+				"abbreviation": "SpTh",
+				"full": "Spell Thief",
+				"authors": [
+					"Nisp"
+				],
+				"version": "1.4.1",
+				"color": "8b0000"
+			}
+		],
+		"dateAdded": 1784430537,
+		"dateModified": 1784430537
+	},
+	"class": [
+		{
+			"name": "Spell Thief",
+			"source": "SpTh",
+			"page": 1,
+			"edition": "one",
+			"primaryAbility": [
+				{
+					"dex": true,
+					"int": true
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"preparedSpellsProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				6,
+				7,
+				7,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				14,
+				14,
+				15,
+				15
+			],
+			"preparedSpellsChange": "restLong",
+			"featProgression": [
+				{
+					"name": "Fighting Style",
+					"category": [
+						"FS"
+					],
+					"progression": {
+						"2": 1
+					}
+				},
+				{
+					"name": "Epic Boon",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"{@item rapier|xphb}",
+					"{@item shortsword|xphb}",
+					"{@item scimitar|xphb}",
+					"{@item hand crossbow|xphb}",
+					"{@item whip|xphb}",
+					"{@item shortbow|xphb}",
+					"{@item longbow|xphb}"
+				],
+				"tools": [
+					"{@item Thieves' Tools|XPHB}"
+				],
+				"toolProficiencies": [
+					{
+						"thieves' tools": true
+					}
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"arcana",
+								"deception",
+								"insight",
+								"investigation",
+								"perception",
+								"sleight of hand",
+								"stealth"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item rapier|xphb} or (b) a {@item shortsword|xphb}",
+					"(a) a {@item hand crossbow|xphb} and 20 {@item crossbow bolts (20)|xphb|bolts} or (b) any {@filter simple weapon|items|type=simple weapon}",
+					"(a) {@item studded leather armor|xphb} or (b) a {@item chain shirt|xphb}",
+					"{@item Thieves' Tools|XPHB}",
+					"an arcane focus (dagger, ring, glove, tattoo, or similar object)"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13,
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					],
+					"tools": [
+						"{@item Thieves' Tools|XPHB}"
+					],
+					"toolProficiencies": [
+						{
+							"thieves' tools": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Larceny Dice",
+						"Die Size",
+						"Prepared Spells"
+					],
+					"rows": [
+						[
+							2,
+							"d6",
+							2
+						],
+						[
+							2,
+							"d6",
+							3
+						],
+						[
+							2,
+							"d6",
+							4
+						],
+						[
+							2,
+							"d6",
+							5
+						],
+						[
+							3,
+							"d8",
+							6
+						],
+						[
+							3,
+							"d8",
+							6
+						],
+						[
+							3,
+							"d8",
+							7
+						],
+						[
+							3,
+							"d8",
+							7
+						],
+						[
+							4,
+							"d8",
+							9
+						],
+						[
+							4,
+							"d8",
+							9
+						],
+						[
+							4,
+							"d10",
+							10
+						],
+						[
+							4,
+							"d10",
+							10
+						],
+						[
+							5,
+							"d10",
+							11
+						],
+						[
+							5,
+							"d10",
+							11
+						],
+						[
+							5,
+							"d10",
+							12
+						],
+						[
+							5,
+							"d10",
+							12
+						],
+						[
+							6,
+							"d12",
+							14
+						],
+						[
+							6,
+							"d12",
+							14
+						],
+						[
+							6,
+							"d12",
+							15
+						],
+						[
+							6,
+							"d12",
+							15
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Spell Thief}",
+						"{@filter 2nd|spells|level=2|class=Spell Thief}",
+						"{@filter 3rd|spells|level=3|class=Spell Thief}",
+						"{@filter 4th|spells|level=4|class=Spell Thief}",
+						"{@filter 5th|spells|level=5|class=Spell Thief}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Arcane Pickpocket|Spell Thief|SpTh|1",
+				"Cunning Action|Spell Thief|SpTh|1",
+				"Spellcasting|Spell Thief|SpTh|2",
+				"Redirect Magic|Spell Thief|SpTh|2",
+				"Fighting Style|Spell Thief|SpTh|2",
+				{
+					"classFeature": "Larcenous Discipline|Spell Thief|SpTh|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Spell Thief|SpTh|4",
+				"Extra Attack|Spell Thief|SpTh|5",
+				"Spell Interception|Spell Thief|SpTh|5",
+				{
+					"classFeature": "Larcenous Discipline Feature|Spell Thief|SpTh|6",
+					"gainSubclassFeature": true
+				},
+				"Focus Specialization|Spell Thief|SpTh|7",
+				"Ability Score Improvement|Spell Thief|SpTh|8",
+				{
+					"classFeature": "Larcenous Discipline Feature|Spell Thief|SpTh|10",
+					"gainSubclassFeature": true
+				},
+				"Improved Arcane Larceny|Spell Thief|SpTh|11",
+				"Ability Score Improvement|Spell Thief|SpTh|12",
+				{
+					"classFeature": "Larcenous Discipline Feature|Spell Thief|SpTh|14",
+					"gainSubclassFeature": true
+				},
+				"Grand Theft Magic|Spell Thief|SpTh|15",
+				"Ability Score Improvement|Spell Thief|SpTh|16",
+				"Master Larcenist|Spell Thief|SpTh|17",
+				"Elusive|Spell Thief|SpTh|18",
+				"Epic Boon|Spell Thief|SpTh|19",
+				"Arcane Heist|Spell Thief|SpTh|20"
+			],
+			"classSpells": [
+				"absorb elements|xge",
+				"detect magic|xphb",
+				"disguise self|xphb",
+				"expeditious retreat|xphb",
+				"feather fall|xphb",
+				"identify|xphb",
+				"illusory script|xphb",
+				"jump|xphb",
+				"shield|xphb",
+				"blur|xphb",
+				"detect thoughts|xphb",
+				"invisibility|xphb",
+				"levitate|xphb",
+				"mirror image|xphb",
+				"misty step|xphb",
+				"see invisibility|xphb",
+				"spider climb|xphb",
+				"blink|xphb",
+				"counterspell|xphb",
+				"dispel magic|xphb",
+				"haste|xphb",
+				"nondetection|xphb",
+				"slow|xphb",
+				"tongues|xphb",
+				"arcane eye|xphb",
+				"dimension door|xphb",
+				"freedom of movement|xphb",
+				"greater invisibility|xphb",
+				"mislead|xphb",
+				"passwall|xphb",
+				"scrying|xphb",
+				"skill empowerment|xge",
+				"telekinesis|xphb"
+			],
+			"subclassTitle": "Larcenous Discipline"
+		}
+	],
+	"subclass": [
+		{
+			"name": "Arcane Reaver",
+			"shortName": "Arcane Reaver",
+			"source": "SpTh",
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"page": 1,
+			"subclassFeatures": [
+				"Spellblade Strike|Spell Thief|SpTh|Arcane Reaver|SpTh|3",
+				"Arcane Reflex|Spell Thief|SpTh|Arcane Reaver|SpTh|3",
+				"Antimagic Strikes|Spell Thief|SpTh|Arcane Reaver|SpTh|6",
+				"Combat Theft|Spell Thief|SpTh|Arcane Reaver|SpTh|10",
+				"Counterspelling Flurry|Spell Thief|SpTh|Arcane Reaver|SpTh|14"
+			],
+			"subclassSpells": [
+				"green-flame blade|tce",
+				"booming blade|tce",
+				"sword burst|tce",
+				"shocking grasp|xphb",
+				"chill touch|xphb",
+				"lightning lure|tce"
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"6": [
+							"green-flame blade|tce#c",
+							"booming blade|tce#c",
+							"sword burst|tce#c",
+							"shocking grasp|xphb#c",
+							"chill touch|xphb#c",
+							"lightning lure|tce#c"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Hex Broker",
+			"shortName": "Hex Broker",
+			"source": "SpTh",
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"page": 1,
+			"subclassFeatures": [
+				"Curse Collector|Spell Thief|SpTh|Hex Broker|SpTh|3",
+				"Hex Weaving|Spell Thief|SpTh|Hex Broker|SpTh|3",
+				"Invert Fortune|Spell Thief|SpTh|Hex Broker|SpTh|6",
+				"Condition Stacking|Spell Thief|SpTh|Hex Broker|SpTh|10",
+				"Plague Broker|Spell Thief|SpTh|Hex Broker|SpTh|14"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"hex|xphb"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Mirror Savant",
+			"shortName": "Mirror Savant",
+			"source": "SpTh",
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"page": 1,
+			"subclassFeatures": [
+				"Reflective Theft|Spell Thief|SpTh|Mirror Savant|SpTh|3",
+				"Illusory Decoy|Spell Thief|SpTh|Mirror Savant|SpTh|3",
+				"Spell Echo|Spell Thief|SpTh|Mirror Savant|SpTh|6",
+				"Swap Fate|Spell Thief|SpTh|Mirror Savant|SpTh|10",
+				"Mirror Cascade|Spell Thief|SpTh|Mirror Savant|SpTh|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Arcane Pickpocket",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 1,
+			"entries": [
+				"When a creature you can see within 60 feet casts a spell, you can use your {@variantrule Reaction|XPHB} and expend 1 Larceny Die to attempt to steal it.",
+				"Make an Intelligence ({@skill Arcana}) check. The DC equals the enemy's spell save DC + the spell's level (minimum 1).",
+				{
+					"type": "entries",
+					"name": "Stealing High-Level Spells",
+					"entries": [
+						"You can attempt to steal any spell, but you have {@i disadvantage} on checks to steal spells of a level higher than half your Spell Thief level (rounded up)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "On a Success",
+					"entries": [
+						"Flip a coin. Before the coin lands, ask the GM to call heads or tails.",
+						{
+							"type": "list",
+							"items": [
+								"{@b If the GM calls it correctly:} the original spell fails and has no effect, though the caster's spell slot is still expended — you successfully {@i steal} it.",
+								"{@b If the GM calls it incorrectly:} the original spell still occurs — you successfully {@i copy} it."
+							]
+						},
+						"The spell is stored in your mind until the end of your next turn; only one spell can be stored at a time. You may cast the stolen spell using your action, bonus action (if applicable), or reaction without expending a spell slot, using your own spell save DC and spell attack modifier.",
+						"{@b Critical Theft (natural 20):} you can slightly modify the stolen spell (GM approval)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "On a Failure",
+					"entries": [
+						"Roll the Larceny Die and reduce any damage you take from that spell by the amount rolled. You cannot steal the spell.",
+						"{@b Critical Mishap (natural 1):} the GM chooses one — the spell is cast on you in addition to the original target; the spell's effects are duplicated if already targeting you; or you take {@damage 1d6} psychic damage per spell level as magical feedback."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cunning Action",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 1,
+			"entries": [
+				"Your training in exploiting magical vulnerabilities has honed your physical agility. You can take a {@variantrule Bonus Action|XPHB} on each of your turns in combat to take the {@action Dash}, {@action Disengage}, or {@action Hide} action."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 2,
+			"entries": [
+				"You are an arcane half-caster who learns magic through theft and observation. See the {@book Player's Handbook|XPHB} for the general rules of spellcasting.",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Spell Thief table shows how many spell slots you have. You regain all expended spell slots when you finish a {@variantrule Long Rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prepared Spells",
+					"entries": [
+						"Like a wizard, you prepare spells from your spellbook after a Long Rest. The number of spells you can prepare is shown in the Prepared Spells column of the Spell Thief table. You begin with a spellbook containing three level 1 spells from the {@filter Spell Thief spell list|spells|class=Spell Thief}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability. Your spell save DC = 8 + your proficiency bonus + your Intelligence modifier; your spell attack modifier = your proficiency bonus + your Intelligence modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Learning Spells",
+					"entries": [
+						"{@b Stolen Spells.} When you successfully steal a spell using Arcane Pickpocket, you can attempt to learn it. Make an Intelligence ({@skill Arcana}) check (DC = 10 + spell level). On a success you transcribe it into your spellbook over 8 hours per spell level (minimum 8 hours), costing 100 gp per spell level. Only spells that appear on the wizard spell list can be transcribed this way.",
+						"{@b Wizard Spells.} You can learn any spell from the wizard spell list found in a scroll or another wizard's spellbook. This takes four times as long (32 hours per spell level, minimum 32 hours) and costs 200 gp per spell level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Redirect Magic",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 2,
+			"entries": [
+				"When you or a creature within 60 feet takes damage from a spell you can see, you can use your {@variantrule Reaction|XPHB} and expend 1 Larceny Die to redirect the magical energy.",
+				{
+					"type": "list",
+					"items": [
+						"Roll the Larceny Die and add your Intelligence modifier.",
+						"Reduce the damage by that amount.",
+						"You may redirect the reduced damage to a different creature you can see within 60 feet of the original target.",
+						"The redirected damage is the same type as the original spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 2,
+			"entries": [
+				"You gain a {@filter Fighting Style feat|feats|category=FS} of your choice, except {@i Blind Fighting} or {@i Great Weapon Fighting}."
+			]
+		},
+		{
+			"name": "Larcenous Discipline",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"You choose a specialized path that defines how you steal and wield magic: {@b Arcane Reaver}, {@b Hex Broker}, or {@b Mirror Savant}. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level."
+			]
+		},
+		{
+			"name": "Larcenous Discipline Feature",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 6,
+			"entries": [
+				"You gain a feature granted by your Larcenous Discipline."
+			]
+		},
+		{
+			"name": "Larcenous Discipline Feature",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 10,
+			"entries": [
+				"You gain a feature granted by your Larcenous Discipline."
+			]
+		},
+		{
+			"name": "Larcenous Discipline Feature",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 14,
+			"entries": [
+				"You gain a feature granted by your Larcenous Discipline."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 4,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 8,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 12,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 16,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 5,
+			"entries": [
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Spell Interception",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 5,
+			"entries": [
+				"You've mastered stealing active magical effects.",
+				{
+					"type": "entries",
+					"name": "Concentration Theft",
+					"entries": [
+						"You can steal spells that require {@status concentration||concentration}. On a success:",
+						{
+							"type": "list",
+							"items": [
+								"You may immediately begin concentrating on it.",
+								"The original caster automatically loses concentration.",
+								"You maintain concentration as normal.",
+								"You can attempt Arcane Pickpocket as a {@variantrule Bonus Action|XPHB} instead of a Reaction."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arcane Sense",
+					"entries": [
+						"You can cast {@spell detect magic} at will, without expending a spell slot. Additionally, when you use this feature you learn whether creatures you can see are spellcasters and the highest-level spell slot they have available.",
+						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Focus Specialization",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 7,
+			"entries": [
+				"Your training lets you refine your control over stolen magic. Choose one of the following specializations: {@b Status Transposition} or {@b Arcane Absorption}.",
+				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice.",
+				{
+					"type": "entries",
+					"name": "Status Transposition",
+					"entries": [
+						"As a Bonus Action, you can expend 1 Larceny Die to steal and manipulate magical effects you can see within 60 feet. Choose one:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Transfer:} move a magical condition or buff from one creature to another within range.",
+								"{@b Suppress:} end one magical condition on a creature (roll the Larceny Die and add it as a bonus to any saving throw needed).",
+								"{@b Amplify:} extend the duration of a magical condition by 60 seconds."
+							]
+						},
+						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Arcane Absorption",
+					"entries": [
+						"When you take damage from a spell, you can absorb and convert the magical energy. As a {@variantrule Reaction|XPHB} (without expending a Larceny Die), you can:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Absorb:} gain temporary hit points equal to half the spell damage taken (rounded down), applied after taking the damage and only if you are not reduced to 0 hit points.",
+								"{@b Convert:} change the damage type of the spell to a type of your choice before it affects you."
+							]
+						},
+						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Improved Arcane Larceny",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 11,
+			"entries": [
+				"Your mastery of spell theft deepens:",
+				{
+					"type": "list",
+					"items": [
+						"You can store up to two stolen spells at the same time.",
+						"Stored spells last for 1 minute instead of until the end of your next turn.",
+						"You gain {@i advantage} on Arcane Pickpocket checks against spells of 3rd level or lower.",
+						"When you fail an Arcane Pickpocket check, you roll the Larceny Die twice and take the higher result when reducing damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Grand Theft Magic",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 15,
+			"entries": [
+				"Once per Long Rest, you can perform a perfect magical heist. When a creature you can see within 60 feet casts a spell of 4th level or lower, you can use your {@variantrule Reaction|XPHB} to automatically steal it with no check required.",
+				{
+					"type": "list",
+					"items": [
+						"The spell fails completely and the spell slot is expended.",
+						"You immediately store the spell (it doesn't count against your stored-spell limit).",
+						"The spell lasts for 10 minutes instead of 1 minute.",
+						"You may cast it at any time within that duration without expending a spell slot."
+					]
+				}
+			]
+		},
+		{
+			"name": "Master Larcenist",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 17,
+			"entries": [
+				"You are a legendary thief of magic:",
+				{
+					"type": "list",
+					"items": [
+						"You regain 1 Larceny Die when you roll initiative if you have none remaining.",
+						"When casting a stolen spell you may roll a {@dice d20}; on an 18 or higher the spell is not forgotten and can be used again.",
+						"You can use Arcane Pickpocket twice per round.",
+						"When you steal a spell, you can immediately cast it as part of the same Reaction or Bonus Action."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elusive",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 18,
+			"entries": [
+				"You are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't {@condition incapacitated}."
+			]
+		},
+		{
+			"name": "Epic Boon",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 19,
+			"entries": [
+				"You gain an {@filter Epic Boon feat|feats|category=EB} or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Arcane Heist",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 20,
+			"entries": [
+				"You achieve the pinnacle of magical theft. Once per Long Rest, you can activate Arcane Heist as a {@variantrule Bonus Action|XPHB} for 1 minute. While it is active:",
+				{
+					"type": "list",
+					"items": [
+						"You can use Arcane Pickpocket and Redirect Magic without expending Larceny Dice.",
+						"You can steal multiple spells per round (up to your number of reactions).",
+						"You gain additional reactions equal to your Intelligence modifier (usable only for Arcane Pickpocket or Redirect Magic).",
+						"You automatically succeed on concentration checks to maintain stolen spells.",
+						"You can steal and maintain concentration on two spells simultaneously."
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Spellblade Strike",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Arcane Reaver",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"When you successfully steal a spell, you can immediately make one melee weapon attack as part of the same Reaction. This attack deals an additional {@damage 1d6} force damage.",
+				"This bonus damage increases to {@damage 2d6} at 10th level and {@damage 3d6} at 14th level."
+			]
+		},
+		{
+			"name": "Arcane Reflex",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Arcane Reaver",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"You gain one additional Reaction per round that can only be used for Arcane Pickpocket or Redirect Magic. Additionally, when an attacker you can see hits you with an attack, you can use your Reaction to phase through the Weave, {@i halving} the attack's damage against you."
+			]
+		},
+		{
+			"name": "Antimagic Strikes",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Arcane Reaver",
+			"subclassSource": "SpTh",
+			"level": 6,
+			"entries": [
+				"When you hit a creature with a melee weapon attack, you can roll a Larceny Die to add its value as damage and force the target to make a Constitution saving throw against your spell save DC. On a failed save, choose one:",
+				{
+					"type": "list",
+					"items": [
+						"The creature loses concentration on one spell.",
+						"The creature has disadvantage on its next spell attack roll.",
+						"The creature's spell save DC is reduced by your Intelligence modifier until the end of your next turn."
+					]
+				},
+				"You can cast one of your cantrips in place of one of those attacks. Starting at this level you know the {@filter Spell Thief cantrips|spells|level=0|class=Spell Thief}: {@spell green-flame blade|tce}, {@spell booming blade|tce}, {@spell sword burst|tce}, {@spell shocking grasp|xphb}, {@spell chill touch|xphb}, and {@spell lightning lure|tce}."
+			]
+		},
+		{
+			"name": "Combat Theft",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Arcane Reaver",
+			"subclassSource": "SpTh",
+			"level": 10,
+			"entries": [
+				"When you use your Extra Attack feature, you can replace one of your attacks with an Arcane Pickpocket attempt (without using your Reaction).",
+				"You can now use Spellblade Strike and Antimagic Strikes with small ranged or throwable weapons. Additionally, when a creature within 40 feet of you casts a spell, you can make an opportunity attack against them."
+			]
+		},
+		{
+			"name": "Counterspelling Flurry",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Arcane Reaver",
+			"subclassSource": "SpTh",
+			"level": 14,
+			"entries": [
+				"You can now use Spellblade Strike and Antimagic Strikes with all weapons, and you gain a second Extra Attack (three attacks total).",
+				"When you steal a spell, you gain a burst of magical energy until the end of your next turn:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed increases by 15 feet.",
+						"You have advantage on weapon attack rolls.",
+						"Your spells gain an additional 20 feet of range.",
+						"You can re-roll the steal-spell coin flip."
+					]
+				}
+			]
+		},
+		{
+			"name": "Curse Collector",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Hex Broker",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"You gain the {@b Status Transposition} option from the Focus Specialization feature. When you reach 7th level, you do not choose a Focus Specialization.",
+				"When you steal a debuff or harmful magical condition, you gain temporary hit points equal to {@dice 1d6} + your Intelligence modifier.",
+				"Additionally, you learn the {@spell hex} spell if you don't already know it. It doesn't count against your spells known, and you can cast it once without expending a spell slot, regaining that use on a short or long rest. You can also learn stolen spells from the warlock spell list."
+			]
+		},
+		{
+			"name": "Hex Weaving",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Hex Broker",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"When you use Status Transposition to transfer a harmful condition, you can spend an additional Larceny Die to transfer it to two creatures instead of one. Both targets make saving throws as normal."
+			]
+		},
+		{
+			"name": "Invert Fortune",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Hex Broker",
+			"subclassSource": "SpTh",
+			"level": 6,
+			"entries": [
+				"When you steal a beneficial magical effect (such as {@spell bless}, {@spell haste}, or {@spell invisibility}), you can invert it into its negative counterpart when transferring it.",
+				{
+					"type": "list",
+					"items": [
+						"{@spell Bless} becomes {@spell bane}.",
+						"{@spell Haste} becomes {@spell slow}.",
+						"{@spell Invisibility} becomes {@spell faerie fire}."
+					]
+				},
+				"The inverted effect uses your spell save DC and lasts for the same duration as the original spell would have."
+			]
+		},
+		{
+			"name": "Condition Stacking",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Hex Broker",
+			"subclassSource": "SpTh",
+			"level": 10,
+			"entries": [
+				"When you successfully transfer a magical condition to a creature already suffering from a different magical condition, both effects are enhanced:",
+				{
+					"type": "list",
+					"items": [
+						"Saving throws against both conditions are made with disadvantage (and with advantage for allies).",
+						"Damage from both effects is increased by {@dice 1d6}.",
+						"The duration of both effects is extended by 1 round."
+					]
+				},
+				"You can maintain this enhancement on a number of creatures equal to your Intelligence modifier."
+			]
+		},
+		{
+			"name": "Plague Broker",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Hex Broker",
+			"subclassSource": "SpTh",
+			"level": 14,
+			"entries": [
+				"As an action, you can expend 1 Larceny Die to create a 20-foot-radius sphere of contagious magic centered on a point you can see within 60 feet.",
+				"All creatures in the area must make an Intelligence saving throw against your spell save DC. On a failed save, each creature shares the magical conditions currently affecting any creature you can see — allies gain beneficial conditions, enemies share harmful effects. Each affected condition lasts for 1 minute. You can target up to your Intelligence modifier friendly creatures and up to your Intelligence modifier hostile creatures.",
+				"Affected creatures can repeat the saving throw at the end of each of their turns, ending the effect on themselves on a success.",
+				"Once you use this feature, you can't use it again until you finish a Long Rest."
+			]
+		},
+		{
+			"name": "Reflective Theft",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Mirror Savant",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"When you successfully steal a targeted spell (one that targets specific creatures), you can immediately redirect it to a different valid target within the spell's range.",
+				"The new target must make the original saving throw or be subjected to the original spell attack roll, using your spell save DC or spell attack modifier."
+			]
+		},
+		{
+			"name": "Illusory Decoy",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Mirror Savant",
+			"subclassSource": "SpTh",
+			"level": 3,
+			"entries": [
+				"When you steal a spell, you leave behind a magical duplicate of yourself, similar to {@spell mirror image}, that lasts until the start of your next turn.",
+				{
+					"type": "list",
+					"items": [
+						"It appears in your space and moves with you, mimicking your actions.",
+						"It is indistinguishable from you until it is destroyed.",
+						"A creature that targets you with an attack rolls a {@dice d20} to determine whether the attack instead targets the duplicate (as per {@spell mirror image}).",
+						"It has an AC equal to 10 + your Dexterity modifier and is destroyed if it is hit.",
+						"While the duplicate exists, you have advantage on your next {@skill Stealth} check."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Echo",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Mirror Savant",
+			"subclassSource": "SpTh",
+			"level": 6,
+			"entries": [
+				"When you cast a stolen spell, you can expend a Larceny Die to create a weaker echo of that spell. Roll the Larceny Die:",
+				{
+					"type": "list",
+					"items": [
+						"On a 5 or higher, you can cast the spell again immediately at a different target at its base spell level.",
+						"The echo uses your spell save DC and spell attack modifier.",
+						"You can't create an echo of an echo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Swap Fate",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Mirror Savant",
+			"subclassSource": "SpTh",
+			"level": 10,
+			"entries": [
+				"When a spell targets you or an ally within 30 feet, you can use your {@variantrule Reaction|XPHB} and expend a Larceny Die to swap positions with that creature and attempt to steal the cast spell.",
+				{
+					"type": "list",
+					"items": [
+						"You appear in the ally's space and the ally appears in your space.",
+						"The spell now targets you instead.",
+						"You can immediately attempt to steal the spell using Arcane Pickpocket as part of the same Reaction.",
+						"The swapped ally gains the benefits of your Illusory Decoy feature, creating a duplicate in their space that lasts until the start of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mirror Cascade",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"subclassShortName": "Mirror Savant",
+			"subclassSource": "SpTh",
+			"level": 14,
+			"entries": [
+				"Once per Long Rest, when you steal a spell of 5th level or lower, you can create four echoes of that spell instead of one.",
+				"Each echo can target a different creature or area within the spell's range. The echoes all resolve simultaneously, use your spell save DC and spell attack modifier, and are cast at base spell level."
+			]
+		}
+	]
+}
