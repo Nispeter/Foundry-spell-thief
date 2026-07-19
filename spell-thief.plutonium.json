@@ -12,8 +12,8 @@
 				"color": "8b0000"
 			}
 		],
-		"dateAdded": 1784434735,
-		"dateModified": 1784434735
+		"dateAdded": 1784435362,
+		"dateModified": 1784435362
 	},
 	"class": [
 		{
@@ -458,6 +458,7 @@
 				}
 			],
 			"classFeatures": [
+				"Larceny Dice|Spell Thief|SpTh|1",
 				"Arcane Pickpocket|Spell Thief|SpTh|1",
 				"Cunning Action|Spell Thief|SpTh|1",
 				"Spellcasting|Spell Thief|SpTh|2",
@@ -613,6 +614,38 @@
 		}
 	],
 	"classFeature": [
+		{
+			"name": "Larceny Dice",
+			"source": "SpTh",
+			"page": 1,
+			"className": "Spell Thief",
+			"classSource": "SpTh",
+			"level": 1,
+			"entries": [
+				"You gain {@b Larceny Dice}, which fuel your spell-stealing abilities. This feature tracks your available dice; spend them on your Spell Thief features.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Number of Dice:} equal to your proficiency bonus.",
+						"{@b Die Size:} {@dice d6}, increasing to {@dice d8} at 5th level, {@dice d10} at 11th level, and {@dice d12} at 17th level.",
+						"{@b Recovery:} you regain all expended Larceny Dice when you finish a {@variantrule Short Rest|XPHB} or {@variantrule Long Rest|XPHB}."
+					]
+				}
+			],
+			"foundryImg": "modules/spell-thief/assets/extraction-orb.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "@prof",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
+		},
 		{
 			"name": "Arcane Pickpocket",
 			"source": "SpTh",
