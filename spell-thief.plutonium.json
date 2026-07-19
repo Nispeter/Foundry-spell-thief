@@ -12,8 +12,12 @@
 				"color": "8b0000"
 			}
 		],
-		"dateAdded": 1784435362,
-		"dateModified": 1784435362
+		"optionalFeatureTypes": {
+			"SpTh:FS": "Focus Specialization",
+			"SpTh:HB": "Focus Specialization"
+		},
+		"dateAdded": 1784437098,
+		"dateModified": 1784437098
 	},
 	"class": [
 		{
@@ -569,6 +573,17 @@
 						]
 					}
 				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Focus Specialization",
+					"featureType": [
+						"SpTh:FS"
+					],
+					"progression": {
+						"7": 1
+					}
+				}
 			]
 		},
 		{
@@ -594,6 +609,17 @@
 						]
 					}
 				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Curse Collector",
+					"featureType": [
+						"SpTh:HB"
+					],
+					"progression": {
+						"3": 1
+					}
+				}
 			]
 		},
 		{
@@ -610,6 +636,17 @@
 				"Spell Echo|Spell Thief|SpTh|Mirror Savant|SpTh|6",
 				"Swap Fate|Spell Thief|SpTh|Mirror Savant|SpTh|10",
 				"Mirror Cascade|Spell Thief|SpTh|Mirror Savant|SpTh|14"
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Focus Specialization",
+					"featureType": [
+						"SpTh:FS"
+					],
+					"progression": {
+						"7": 1
+					}
+				}
 			]
 		}
 	],
@@ -928,39 +965,9 @@
 			"classSource": "SpTh",
 			"level": 7,
 			"entries": [
-				"Your training lets you refine your control over stolen magic. Choose one of the following specializations: {@b Status Transposition} or {@b Arcane Absorption}.",
-				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice.",
-				{
-					"type": "entries",
-					"name": "Status Transposition",
-					"entries": [
-						"As a Bonus Action, you can expend 1 Larceny Die to steal and manipulate magical effects you can see within 60 feet. Choose one:",
-						{
-							"type": "list",
-							"items": [
-								"{@b Transfer:} move a magical condition or buff from one creature to another within range.",
-								"{@b Suppress:} end one magical condition on a creature (roll the Larceny Die and add it as a bonus to any saving throw needed).",
-								"{@b Amplify:} extend the duration of a magical condition by 60 seconds."
-							]
-						},
-						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Arcane Absorption",
-					"entries": [
-						"When you take damage from a spell, you can absorb and convert the magical energy. As a {@variantrule Reaction|XPHB} (without expending a Larceny Die), you can:",
-						{
-							"type": "list",
-							"items": [
-								"{@b Absorb:} gain temporary hit points equal to half the spell damage taken (rounded down), applied after taking the damage and only if you are not reduced to 0 hit points.",
-								"{@b Convert:} change the damage type of the spell to a type of your choice before it affects you."
-							]
-						},
-						"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
-					]
-				}
+				"Your training lets you refine your control over stolen magic. Choose one specialization: {@optfeature Status Transposition|SpTh} or {@optfeature Arcane Absorption|SpTh}.",
+				"{@note A {@b Hex Broker} instead gains Status Transposition at 3rd level from {@b Curse Collector} and does not choose a specialization here.}",
+				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice."
 			],
 			"foundryImg": "modules/spell-thief/assets/juggler.svg"
 		},
@@ -1357,6 +1364,50 @@
 				"Each echo can target a different creature or area within the spell's range. The echoes all resolve simultaneously, use your spell save DC and spell attack modifier, and are cast at base spell level."
 			],
 			"foundryImg": "modules/spell-thief/assets/psychic-waves.svg"
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Status Transposition",
+			"source": "SpTh",
+			"page": 1,
+			"featureType": [
+				"SpTh:FS",
+				"SpTh:HB"
+			],
+			"foundryImg": "modules/spell-thief/assets/transfuse.svg",
+			"entries": [
+				"As a {@variantrule Bonus Action|XPHB}, you can expend 1 Larceny Die to steal and manipulate magical effects you can see within 60 feet. Choose one:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Transfer:} move a magical condition or buff from one creature to another within range.",
+						"{@b Suppress:} end one magical condition on a creature (roll the Larceny Die and add it as a bonus to any saving throw needed).",
+						"{@b Amplify:} extend the duration of a magical condition by 60 seconds."
+					]
+				},
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+			]
+		},
+		{
+			"name": "Arcane Absorption",
+			"source": "SpTh",
+			"page": 1,
+			"featureType": [
+				"SpTh:FS"
+			],
+			"foundryImg": "modules/spell-thief/assets/shield-opposition.svg",
+			"entries": [
+				"When you take damage from a spell, you can absorb and convert the magical energy. As a {@variantrule Reaction|XPHB} (without expending a Larceny Die), you can:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Absorb:} gain temporary hit points equal to half the spell damage taken (rounded down), applied after taking the damage and only if you are not reduced to 0 hit points.",
+						"{@b Convert:} change the damage type of the spell to a type of your choice before it affects you."
+					]
+				},
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+			]
 		}
 	],
 	"foundryClass": [
