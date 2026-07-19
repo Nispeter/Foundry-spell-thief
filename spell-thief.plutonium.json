@@ -14,10 +14,11 @@
 		],
 		"optionalFeatureTypes": {
 			"SpTh:FS": "Focus Specialization",
-			"SpTh:HB": "Focus Specialization"
+			"SpTh:HB3": "Focus Specialization",
+			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784437098,
-		"dateModified": 1784437098
+		"dateAdded": 1784477545,
+		"dateModified": 1784477545
 	},
 	"class": [
 		{
@@ -614,10 +615,19 @@
 				{
 					"name": "Curse Collector",
 					"featureType": [
-						"SpTh:HB"
+						"SpTh:HB3"
 					],
 					"progression": {
 						"3": 1
+					}
+				},
+				{
+					"name": "Focus Specialization",
+					"featureType": [
+						"SpTh:HB7"
+					],
+					"progression": {
+						"7": 1
 					}
 				}
 			]
@@ -966,7 +976,7 @@
 			"level": 7,
 			"entries": [
 				"Your training lets you refine your control over stolen magic. Choose one specialization: {@optfeature Status Transposition|SpTh} or {@optfeature Arcane Absorption|SpTh}.",
-				"{@note A {@b Hex Broker} instead gains Status Transposition at 3rd level from {@b Curse Collector} and does not choose a specialization here.}",
+				"{@note A {@b Hex Broker} doesn't choose here: it already has Status Transposition (from {@b Curse Collector} at 3rd level) and automatically gains the other option, Arcane Absorption, at this level.}",
 				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice."
 			],
 			"foundryImg": "modules/spell-thief/assets/juggler.svg"
@@ -1183,7 +1193,7 @@
 			"subclassSource": "SpTh",
 			"level": 3,
 			"entries": [
-				"You gain the {@b Status Transposition} option from the Focus Specialization feature. When you reach 7th level, you do not choose a Focus Specialization.",
+				"You gain the {@optfeature Status Transposition|SpTh} option from the Focus Specialization feature. When you reach 7th level, you do not choose a Focus Specialization; instead you automatically gain the other option, {@optfeature Arcane Absorption|SpTh}.",
 				"When you steal a debuff or harmful magical condition, you gain temporary hit points equal to {@dice 1d6} + your Intelligence modifier.",
 				"Additionally, you learn the {@spell hex} spell if you don't already know it. It doesn't count against your spells known, and you can cast it once without expending a spell slot, regaining that use on a short or long rest. You can also learn stolen spells from the warlock spell list."
 			],
@@ -1373,7 +1383,7 @@
 			"page": 1,
 			"featureType": [
 				"SpTh:FS",
-				"SpTh:HB"
+				"SpTh:HB3"
 			],
 			"foundryImg": "modules/spell-thief/assets/transfuse.svg",
 			"entries": [
@@ -1394,7 +1404,8 @@
 			"source": "SpTh",
 			"page": 1,
 			"featureType": [
-				"SpTh:FS"
+				"SpTh:FS",
+				"SpTh:HB7"
 			],
 			"foundryImg": "modules/spell-thief/assets/shield-opposition.svg",
 			"entries": [
