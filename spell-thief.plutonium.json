@@ -17,8 +17,8 @@
 			"SpTh:HB3": "Focus Specialization",
 			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784477545,
-		"dateModified": 1784477545
+		"dateAdded": 1784582490,
+		"dateModified": 1784582490
 	},
 	"class": [
 		{
@@ -965,7 +965,19 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/gaze.svg"
+			"foundryImg": "modules/spell-thief/assets/gaze.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "max(1, @abilities.int.mod)",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		},
 		{
 			"name": "Focus Specialization",
@@ -1021,7 +1033,19 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/icicles-fence.svg"
+			"foundryImg": "modules/spell-thief/assets/icicles-fence.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		},
 		{
 			"name": "Master Larcenist",
@@ -1042,7 +1066,14 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/magic-swirl.svg"
+			"foundryImg": "modules/spell-thief/assets/magic-swirl.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "",
+					"spent": 0,
+					"recovery": []
+				}
+			}
 		},
 		{
 			"name": "Elusive",
@@ -1088,7 +1119,19 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/cloak-dagger.svg"
+			"foundryImg": "modules/spell-thief/assets/cloak-dagger.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		}
 	],
 	"subclassFeature": [
@@ -1197,7 +1240,19 @@
 				"When you steal a debuff or harmful magical condition, you gain temporary hit points equal to {@dice 1d6} + your Intelligence modifier.",
 				"Additionally, you learn the {@spell hex} spell if you don't already know it. It doesn't count against your spells known, and you can cast it once without expending a spell slot, regaining that use on a short or long rest. You can also learn stolen spells from the warlock spell list."
 			],
-			"foundryImg": "modules/spell-thief/assets/cursed-star.svg"
+			"foundryImg": "modules/spell-thief/assets/cursed-star.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "sr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		},
 		{
 			"name": "Hex Weaving",
@@ -1274,7 +1329,19 @@
 				"Affected creatures can repeat the saving throw at the end of each of their turns, ending the effect on themselves on a success.",
 				"Once you use this feature, you can't use it again until you finish a Long Rest."
 			],
-			"foundryImg": "modules/spell-thief/assets/lightning-dome.svg"
+			"foundryImg": "modules/spell-thief/assets/lightning-dome.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		},
 		{
 			"name": "Reflective Theft",
@@ -1373,7 +1440,19 @@
 				"Once per Long Rest, when you steal a spell of 5th level or lower, you can create four echoes of that spell instead of one.",
 				"Each echo can target a different creature or area within the spell's range. The echoes all resolve simultaneously, use your spell save DC and spell attack modifier, and are cast at base spell level."
 			],
-			"foundryImg": "modules/spell-thief/assets/psychic-waves.svg"
+			"foundryImg": "modules/spell-thief/assets/psychic-waves.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "1",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			}
 		}
 	],
 	"optionalfeature": [
@@ -1386,6 +1465,18 @@
 				"SpTh:HB3"
 			],
 			"foundryImg": "modules/spell-thief/assets/transfuse.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "max(1, @abilities.int.mod)",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
 			"entries": [
 				"As a {@variantrule Bonus Action|XPHB}, you can expend 1 Larceny Die to steal and manipulate magical effects you can see within 60 feet. Choose one:",
 				{
@@ -1408,6 +1499,18 @@
 				"SpTh:HB7"
 			],
 			"foundryImg": "modules/spell-thief/assets/shield-opposition.svg",
+			"foundrySystem": {
+				"uses": {
+					"max": "max(1, @abilities.int.mod)",
+					"spent": 0,
+					"recovery": [
+						{
+							"period": "lr",
+							"type": "recoverAll"
+						}
+					]
+				}
+			},
 			"entries": [
 				"When you take damage from a spell, you can absorb and convert the magical energy. As a {@variantrule Reaction|XPHB} (without expending a Larceny Die), you can:",
 				{
