@@ -17,8 +17,8 @@
 			"SpTh:HB3": "Focus Specialization",
 			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784582490,
-		"dateModified": 1784582490
+		"dateAdded": 1784582584,
+		"dateModified": 1784582584
 	},
 	"class": [
 		{
@@ -66,6 +66,15 @@
 				15
 			],
 			"preparedSpellsChange": "restLong",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"7": [
+							"detect magic|xphb"
+						]
+					}
+				}
+			],
 			"featProgression": [
 				{
 					"name": "Fighting Style",
@@ -989,7 +998,8 @@
 			"entries": [
 				"Your training lets you refine your control over stolen magic. Choose one specialization: {@optfeature Status Transposition|SpTh} or {@optfeature Arcane Absorption|SpTh}.",
 				"{@note A {@b Hex Broker} doesn't choose here: it already has Status Transposition (from {@b Curse Collector} at 3rd level) and automatically gains the other option, Arcane Absorption, at this level.}",
-				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice."
+				"Additionally, as a {@variantrule Bonus Action|XPHB} you can expend a spell slot to gain a number of Larceny Dice equal to the slot's level. You can't exceed your normal maximum number of Larceny Dice.",
+				"You also have {@spell detect magic} always prepared, and you can cast it at will without expending a spell slot."
 			],
 			"foundryImg": "modules/spell-thief/assets/juggler.svg"
 		},
