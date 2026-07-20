@@ -17,8 +17,8 @@
 			"SpTh:HB3": "Focus Specialization",
 			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784582584,
-		"dateModified": 1784582584
+		"dateAdded": 1784582645,
+		"dateModified": 1784582645
 	},
 	"class": [
 		{
@@ -1350,6 +1350,21 @@
 							"type": "recoverAll"
 						}
 					]
+				},
+				"target": {
+					"affects": {
+						"choice": false,
+						"count": "",
+						"type": "creature",
+						"special": ""
+					},
+					"template": {
+						"units": "ft",
+						"type": "sphere",
+						"size": "20",
+						"contiguous": false,
+						"count": ""
+					}
 				}
 			}
 		},
