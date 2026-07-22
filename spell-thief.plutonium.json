@@ -17,8 +17,8 @@
 			"SpTh:HB3": "Focus Specialization",
 			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784757906,
-		"dateModified": 1784757906
+		"dateAdded": 1784759119,
+		"dateModified": 1784759119
 	},
 	"class": [
 		{
@@ -744,7 +744,41 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/magic-palm.svg"
+			"foundryImg": "modules/spell-thief/assets/magic-palm.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Cunning Action",
@@ -818,7 +852,41 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/shieldcomb.svg"
+			"foundryImg": "modules/spell-thief/assets/shieldcomb.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Fighting Style",
@@ -1195,7 +1263,41 @@
 				},
 				"You can cast one of your cantrips in place of one of those attacks. Starting at this level you know the {@filter Spell Thief cantrips|spells|level=0|class=Spell Thief}: {@spell green-flame blade|tce}, {@spell booming blade|tce}, {@spell sword burst|tce}, {@spell shocking grasp|xphb}, {@spell chill touch|xphb}, and {@spell lightning lure|tce}."
 			],
-			"foundryImg": "modules/spell-thief/assets/scalpel-strike.svg"
+			"foundryImg": "modules/spell-thief/assets/scalpel-strike.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Combat Theft",
@@ -1276,7 +1378,41 @@
 			"entries": [
 				"When you use Status Transposition to transfer a harmful condition, you can spend an additional Larceny Die to transfer it to two creatures instead of one. Both targets make saving throws as normal."
 			],
-			"foundryImg": "modules/spell-thief/assets/dripping-star.svg"
+			"foundryImg": "modules/spell-thief/assets/dripping-star.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Invert Fortune",
@@ -1350,6 +1486,38 @@
 							"type": "recoverAll"
 						}
 					]
+				},
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spread Contagion",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
 				},
 				"target": {
 					"affects": {
@@ -1427,7 +1595,41 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/vibrating-ball.svg"
+			"foundryImg": "modules/spell-thief/assets/vibrating-ball.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Swap Fate",
@@ -1450,7 +1652,41 @@
 					]
 				}
 			],
-			"foundryImg": "modules/spell-thief/assets/body-swapping.svg"
+			"foundryImg": "modules/spell-thief/assets/body-swapping.svg",
+			"foundrySystem": {
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
+				}
+			}
 		},
 		{
 			"name": "Mirror Cascade",
@@ -1495,6 +1731,38 @@
 					"max": "",
 					"spent": 0,
 					"recovery": []
+				},
+				"activities": {
+					"larcenyspend0001": {
+						"_id": "larcenyspend0001",
+						"type": "utility",
+						"name": "Spend Larceny Die",
+						"sort": 0,
+						"activation": {
+							"type": "special",
+							"value": null,
+							"condition": "",
+							"override": false
+						},
+						"consumption": {
+							"targets": [
+								{
+									"type": "itemUses",
+									"target": "feat:larceny-dice",
+									"value": "1",
+									"scaling": {
+										"mode": "",
+										"formula": ""
+									}
+								}
+							],
+							"scaling": {
+								"allowed": false,
+								"max": ""
+							},
+							"spellSlot": true
+						}
+					}
 				}
 			},
 			"entries": [
