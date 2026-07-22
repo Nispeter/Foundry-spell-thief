@@ -1,0 +1,4 @@
+# Foundry VTT LevelDB compendium packs are binary databases.
+# Never apply text/EOL (CRLF) conversion — otherwise CURRENT/MANIFEST get a
+# stray carriage return and the pack fails to open on clone/checkout.
+packs/** binary
