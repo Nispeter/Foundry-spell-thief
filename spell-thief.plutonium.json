@@ -17,8 +17,8 @@
 			"SpTh:HB3": "Focus Specialization",
 			"SpTh:HB7": "Focus Specialization"
 		},
-		"dateAdded": 1784582645,
-		"dateModified": 1784582645
+		"dateAdded": 1784757906,
+		"dateModified": 1784757906
 	},
 	"class": [
 		{
@@ -1492,14 +1492,9 @@
 			"foundryImg": "modules/spell-thief/assets/transfuse.svg",
 			"foundrySystem": {
 				"uses": {
-					"max": "max(1, @abilities.int.mod)",
+					"max": "",
 					"spent": 0,
-					"recovery": [
-						{
-							"period": "lr",
-							"type": "recoverAll"
-						}
-					]
+					"recovery": []
 				}
 			},
 			"entries": [
@@ -1512,7 +1507,7 @@
 						"{@b Amplify:} extend the duration of a magical condition by 60 seconds."
 					]
 				},
-				"You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining all uses on a Long Rest."
+				"You can use this feature as often as you have Larceny Dice to spend; it has no separate limit."
 			]
 		},
 		{

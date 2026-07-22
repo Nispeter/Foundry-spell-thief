@@ -1,5 +1,5 @@
-2026/07/20-17:57:20.704 ef4 Recovering log #62
-2026/07/20-17:57:20.704 ef4 Level-0 table #64: started
-2026/07/20-17:57:20.704 ef4 Level-0 table #64: 26326 bytes OK
-2026/07/20-17:57:20.711 ef4 Delete type=0 #62
-2026/07/20-17:57:20.711 ef4 Delete type=3 #61
+2026/07/22-18:06:25.551 72a8 Recovering log #73
+2026/07/22-18:06:25.551 72a8 Level-0 table #75: started
+2026/07/22-18:06:25.560 72a8 Level-0 table #75: 1746 bytes OK
+2026/07/22-18:06:25.564 72a8 Delete type=0 #73
+2026/07/22-18:06:25.564 72a8 Delete type=3 #72
